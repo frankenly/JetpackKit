@@ -33,6 +33,17 @@ public class JepackKitUtil {
         
     }
     
+    public func centerX(with viewTarget: UIView) {
+        superView.centerXAnchor.constraint(equalTo: viewTarget.centerXAnchor).isActive = true
+    }
+    
+    public func centerY(with viewTarget: UIView) {
+        superView.centerYAnchor.constraint(equalTo: viewTarget.centerYAnchor).isActive = true
+    }
+ 
+}
+
+internal extension JepackKitUtil {
     private func anchorConstrantPositionReturn(_ top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, topConstant: CGFloat = 0, leftConstant: CGFloat = 0, bottomConstant: CGFloat = 0, rightConstant: CGFloat = 0, widthConstant: CGFloat = 0, heightConstant: CGFloat = 0) -> JPKAnchorConstrant {
         
         superView.translatesAutoresizingMaskIntoConstraints = false
