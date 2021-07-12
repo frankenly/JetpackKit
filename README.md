@@ -2,6 +2,25 @@
 
 A description of this package.
 
+# JetpackKitUtil
+Using in UIView extension jpk
+```swift
+
+    // using
+    UIView.jpk.anchor()
+
+    // set center
+    UIView.jpk.centerX(with: UIViewTarget)
+    UIView.jpk.centerY(with: UIViewTarget)
+
+    // call get constrant
+    UIView.jpk.constrants.top.constant = 0
+    UIView.jpk.constrants.bottom.constant = 0
+    UIView.jpk.constrants.left.constant = 0
+    UIView.jpk.constrants.right.constant = 0
+
+```
+
 # Debug
 How to use ?
 ```swift
@@ -18,6 +37,13 @@ How to use ?
     * .SUCCESS is green icon
 
 # Version Log
+* 1.0.1
+    * JetpackKitUtils class in UIView
+        * Set anchor
+        * Update anchor
+        * Set Center x,y
+        * add extension in uiview (jpk)
+        * add extension in X,Y Constrant view.
 * 1.0.0
     * JPKDebug class debug mode can print
     * JPKConfigure can set enable debug mode
