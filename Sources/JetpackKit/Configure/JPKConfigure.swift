@@ -10,13 +10,13 @@ import UIKit
 
 public class JPKConfigure {
     
-    public static var navigationBar: FPKNavigationBarConfig = .init()
+    public static var navigationBar: JPKNavigationBarConfig = .init()
     
     public static var isDebug: Bool = true
     
 }
 
-public class FPKNavigationBarConfig {
+public class JPKNavigationBarConfig {
     
     public var backText: String = "กลับ"
     public var backColor: UIColor = .blue

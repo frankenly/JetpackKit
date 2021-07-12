@@ -1,4 +1,4 @@
-# FKJetpack
+# JetpackKit
 
 A description of this package.
 
@@ -7,10 +7,10 @@ How to use ?
 ```swift
     
     // using 
-    FKDebug.print("Subject", msg: "Detail", mode: .LOG)
+    JPKDebug.print("Subject", msg: "Detail", mode: .LOG)
 
     // disable - enable
-    FKConfigure.isDebug = false
+    JPKConfigure.isDebug = false
 ```
 * mode
     * .LOG is white icon
@@ -19,7 +19,7 @@ How to use ?
 
 # Version Log
 * 1.0.0
-    * FKDebug class debug mode can print
-    * FKConfigure can set enable debug mode
+    * JPKDebug class debug mode can print
+    * JPKConfigure can set enable debug mode
     * init project + structure
     
