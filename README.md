@@ -37,6 +37,8 @@ How to use ?
     * .SUCCESS is green icon
 
 # Version Log
+* 1.0.2
+    * NSLayoutXAxisAnchor, NSLayoutYAxisAnchor clear data, if getConstrant()
 * 1.0.1
     * JetpackKitUtils class in UIView
         * Set anchor
