@@ -20,7 +20,9 @@ public extension NSLayoutXAxisAnchor {
     
     public func getConstrant() -> CGFloat? {
         let tmpAddress = String(format: "%p", unsafeBitCast(self, to: Int.self))
-        return NSLayoutXAxisAnchor._myComputedProperty[tmpAddress] ?? 0.0
+        let result = NSLayoutXAxisAnchor._myComputedProperty[tmpAddress] ?? 0.0
+        NSLayoutXAxisAnchor._myComputedProperty.removeValue(forKey: tmpAddress)
+        return result
     }
     
 }
