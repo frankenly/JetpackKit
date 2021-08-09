@@ -37,6 +37,9 @@ How to use ?
     * .SUCCESS is green icon
 
 # Version Log
+* 1.0.3
+    * JPKViewController
+        * add present (merge UINavController + ViewController) can set modalPresentStyle in 1 pack.
 * 1.0.2
     * NSLayoutXAxisAnchor, NSLayoutYAxisAnchor clear data, if getConstrant()
 * 1.0.1
