@@ -10,20 +10,10 @@ import UIKit
 
 public extension UIViewController {
     
-    /// Present and set nav controller
-    public func present(
-        rootViewController: UIViewController,
-        modalPresentStyle: UIModalPresentationStyle? = nil,
-        animated: Bool = true,
-        completion: (() -> Void)?) -> Void {
-        
-        let nav = UINavigationController(rootViewController: rootViewController)
-        if let modalStyle = modalPresentStyle {
-            nav.modalPresentationStyle = modalStyle
+    public var jpk: JPKViewController {
+        return with(JPKViewController.instance) {
+            $0.viewController = self
         }
-        
-        present(nav, animated: animated, completion: completion)
-        
     }
     
 }
