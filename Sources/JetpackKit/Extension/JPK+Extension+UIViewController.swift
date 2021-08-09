@@ -15,7 +15,7 @@ public extension UIViewController {
         rootViewController: UIViewController,
         modalPresentStyle: UIModalPresentationStyle? = nil,
         animated: Bool = true,
-        completion: @escaping (() -> Void)?) -> Void {
+        completion: @escaping () -> Void) -> Void {
         
         let nav = UINavigationController(rootViewController: rootViewController)
         if let modalStyle = modalPresentStyle {
