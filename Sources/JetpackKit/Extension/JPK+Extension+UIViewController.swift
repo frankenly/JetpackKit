@@ -10,8 +10,8 @@ import UIKit
 
 public extension UIViewController {
     
-    /// Present and set nav controller 
-    public present(
+    /// Present and set nav controller
+    public func present(
         rootViewController: UIViewController,
         modalPresentStyle: UIModalPresentationStyle? = nil,
         animated: Bool = true,
