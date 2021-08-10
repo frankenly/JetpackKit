@@ -18,6 +18,11 @@ public class JepackKitUtil {
         self.superView = superView
     }
     
+    public func mapAnchor(top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, widthConstant: CGFloat = 0, heightConstant: CGFloat = 0) -> JepackKitUtil {
+        self.anchor(top: top, left: left, bottom: bottom, right: right, widthConstant: widthConstant, heightConstant: heightConstant)
+        return self
+    }
+    
     public func anchor(top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, widthConstant: CGFloat = 0, heightConstant: CGFloat = 0) -> Void {
         
         self.constrants = anchorConstrantPositionReturn(top,
@@ -33,15 +38,25 @@ public class JepackKitUtil {
         
     }
     
+    public func mapCenterX(with viewTarget: UIView) -> JepackKitUtil {
+        self.centerX(with: viewTarget)
+        return self
+    }
+    
     public func centerX(with viewTarget: UIView) {
         superView.centerXAnchor.constraint(equalTo: viewTarget.centerXAnchor).isActive = true
+    }
+    
+    public func centerY(with viewTarget: UIView) -> JepackKitUtil {
+        self.centerY(with: viewTarget)
+        return self
     }
     
     public func centerY(with viewTarget: UIView) {
         superView.centerYAnchor.constraint(equalTo: viewTarget.centerYAnchor).isActive = true
     }
     
-    public func addSubview(withSuperView _superview: UIView) -> JepackKitUtil {
+    public func addSuperview(superview _superview: UIView) -> JepackKitUtil {
         _superview.addSubview(self.superView)
         return self
     }
