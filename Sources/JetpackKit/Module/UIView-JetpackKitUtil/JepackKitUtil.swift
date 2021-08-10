@@ -56,7 +56,7 @@ public class JepackKitUtil {
         superView.centerYAnchor.constraint(equalTo: viewTarget.centerYAnchor).isActive = true
     }
     
-    public func addSuperview(superview _superview: UIView) -> JepackKitUtil {
+    public func addSuperview(_ _superview: UIView) -> JepackKitUtil {
         _superview.addSubview(self.superView)
         return self
     }

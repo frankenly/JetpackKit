@@ -37,6 +37,8 @@ How to use ?
     * .SUCCESS is green icon
 
 # Version Log
+* 1.0.6
+    * JetpackKitUtil add _ in addSuperview
 * 1.0.5
     * JetpackKitUtil remove add subview
     * JetpackKitUtil add func addSuperview
