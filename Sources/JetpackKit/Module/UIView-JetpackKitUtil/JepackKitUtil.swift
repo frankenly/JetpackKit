@@ -47,7 +47,7 @@ public class JepackKitUtil {
         superView.centerXAnchor.constraint(equalTo: viewTarget.centerXAnchor).isActive = true
     }
     
-    public func centerY(with viewTarget: UIView) -> JepackKitUtil {
+    public func mapCenterY(with viewTarget: UIView) -> JepackKitUtil {
         self.centerY(with: viewTarget)
         return self
     }
