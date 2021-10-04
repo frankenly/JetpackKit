@@ -28,7 +28,7 @@ public class JPKDebug {
     
     public static func print( _ title: String, msg: String, mode: JPKDebug.Mode = .LOG) {
         if JPKConfigure.isDebug {
-            Swift.print("\(mode.icon) \(Date().description(with: Locale.current)) - \(title) : \(msg)")
+            Swift.print("JPKDebug mode - \(mode.icon) \(Date().description(with: Locale.current)) - \(title) : \(msg)")
         }
     }
     

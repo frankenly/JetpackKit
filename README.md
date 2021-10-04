@@ -37,6 +37,8 @@ How to use ?
     * .SUCCESS is green icon
 
 # Version Log
+* 1.0.8
+    * JPK Debug insert first string.
 * 1.0.7
     * Fixed bug
 * 1.0.6
