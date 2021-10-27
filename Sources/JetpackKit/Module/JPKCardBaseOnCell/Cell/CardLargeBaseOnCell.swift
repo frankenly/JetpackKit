@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-open class CardLargeBaseOnCell: JPKCardBaseOnCell {
+public(open) class CardLargeBaseOnCell: JPKCardBaseOnCell {
     
     override public func setupCardView(
         position: JPKCardBaseOnCell.Position,
