@@ -174,7 +174,7 @@ open class JPKCardBaseOnCell: UITableViewCell {
 
     open func configure(
         position: JPKCardBaseOnCell.Position,
-        model: Any = nil,
+        model: Any? = nil,
         left: CGFloat = JPKCardBaseOnCellProperty.marginCardLeft,
         right: CGFloat = JPKCardBaseOnCellProperty.marginCardRight,
         top: CGFloat = JPKCardBaseOnCellProperty.marginCardTop,
@@ -196,7 +196,7 @@ open class JPKCardBaseOnCell: UITableViewCell {
         
     }
     
-    open func updateCell(_ model: Any, completion: (() -> Void)?) {
+    open func updateCell(_ model: Any?, completion: (() -> Void)?) {
         
     }
 }
