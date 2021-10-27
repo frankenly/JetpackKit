@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public class JPKCardBaseOnCell: UITableViewCell {
+open class JPKCardBaseOnCell: UITableViewCell {
     
     public weak var delegateOfBase: JPKCardBaseOnDelegate?
     
