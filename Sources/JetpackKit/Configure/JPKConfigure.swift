@@ -14,6 +14,9 @@ public class JPKConfigure {
     
     public static var isDebug: Bool = true
     
+    /// config tableview card
+    public static var cardCellProperty: JPKCardBaseOnCellProperty = .init()
+    
 }
 
 public class JPKNavigationBarConfig {

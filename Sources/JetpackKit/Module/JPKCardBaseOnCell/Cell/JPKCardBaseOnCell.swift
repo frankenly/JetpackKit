@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-open class JPKCardBaseOnCell: UITableViewCell {
+open class JPKConfigure.tableViewCardCellProperty: UITableViewCell {
     
     public weak var delegateOfBase: JPKCardBaseOnDelegate?
     
@@ -56,31 +56,31 @@ open class JPKCardBaseOnCell: UITableViewCell {
    
     public let cardViewTop: UIView = {
         let v = UIView()
-        v.backgroundColor = JPKCardBaseOnCellProperty.cardColor
-        v.layer.cornerRadius = JPKCardBaseOnCellProperty.cardRadius
+        v.backgroundColor = JPKConfigure.cardCellProperty.cardColor
+        v.layer.cornerRadius = JPKConfigure.cardCellProperty.cardRadius
         v.isHidden = true
         return v
     }()
     
     public let cardViewSingle: UIView = {
         let v = UIView()
-        v.backgroundColor = JPKCardBaseOnCellProperty.cardColor
-        v.layer.cornerRadius = JPKCardBaseOnCellProperty.cardRadius
+        v.backgroundColor = JPKConfigure.cardCellProperty.cardColor
+        v.layer.cornerRadius = JPKConfigure.cardCellProperty.cardRadius
         v.isHidden = true
         return v
     }()
     
     public let cardViewBottom: UIView = {
         let v = UIView()
-        v.backgroundColor = JPKCardBaseOnCellProperty.cardColor
-        v.layer.cornerRadius = JPKCardBaseOnCellProperty.cardRadius
+        v.backgroundColor = JPKConfigure.cardCellProperty.cardColor
+        v.layer.cornerRadius = JPKConfigure.cardCellProperty.cardRadius
         v.isHidden = true
         return v
     }()
     
     public let cardViewCenter: UIView = {
         let v = UIView()
-        v.backgroundColor = JPKCardBaseOnCellProperty.cardColor
+        v.backgroundColor = JPKConfigure.cardCellProperty.cardColor
         v.layer.cornerRadius = 0
         v.isHidden = true
         return v
@@ -88,7 +88,7 @@ open class JPKCardBaseOnCell: UITableViewCell {
     
     public let borderBottomView: UIView = {
         let v = UIView()
-        v.backgroundColor = JPKCardBaseOnCellProperty.cardColor
+        v.backgroundColor = JPKConfigure.cardCellProperty.cardColor
         return v
     }()
     
@@ -101,18 +101,18 @@ open class JPKCardBaseOnCell: UITableViewCell {
     }
     
     public func setupCardView(
-        position: JPKCardBaseOnCell.Position,
-        left: CGFloat = JPKCardBaseOnCellProperty.marginCardLeft,
-        right: CGFloat = JPKCardBaseOnCellProperty.marginCardRight,
-        top: CGFloat = JPKCardBaseOnCellProperty.marginCardTop,
-        bottom: CGFloat = JPKCardBaseOnCellProperty.marginCardBottom)
+        position: JPKConfigure.tableViewCardCellProperty.Position,
+        left: CGFloat = JPKConfigure.cardCellProperty.marginCardLeft,
+        right: CGFloat = JPKConfigure.cardCellProperty.marginCardRight,
+        top: CGFloat = JPKConfigure.cardCellProperty.marginCardTop,
+        bottom: CGFloat = JPKConfigure.cardCellProperty.marginCardBottom)
     {
         
         self._position = position
         
         contentView.clipsToBounds = true
         
-        self.contentView.backgroundColor = JPKCardBaseOnCellProperty.backgroundColor
+        self.contentView.backgroundColor = JPKConfigure.cardCellProperty.backgroundColor
         
         cardViewTop.jpk
             .addSuperview(contentView)
@@ -166,19 +166,19 @@ open class JPKCardBaseOnCell: UITableViewCell {
     }
     
     open func setupShadow() {
-        cardViewTop.jpk.shadowFlatDesign(opacityShadow: 0.1, radius: JPKCardBaseOnCellProperty.cardRadius, offset: .init(width: 0, height: 0))
+        cardViewTop.jpk.shadowFlatDesign(opacityShadow: 0.1, radius: JPKConfigure.cardCellProperty.cardRadius, offset: .init(width: 0, height: 0))
         cardViewCenter.jpk.shadowFlatDesign(opacityShadow: 0.1, radius: 0, offset: .init(width: 0, height: 0))
-        cardViewBottom.jpk.shadowFlatDesign(opacityShadow: 0.1, radius: JPKCardBaseOnCellProperty.cardRadius, offset: .init(width: 0, height: 0))
-        cardViewSingle.jpk.shadowFlatDesign(opacityShadow: 0.1, radius: JPKCardBaseOnCellProperty.cardRadius, offset: .init(width: 0, height: 0))
+        cardViewBottom.jpk.shadowFlatDesign(opacityShadow: 0.1, radius: JPKConfigure.cardCellProperty.cardRadius, offset: .init(width: 0, height: 0))
+        cardViewSingle.jpk.shadowFlatDesign(opacityShadow: 0.1, radius: JPKConfigure.cardCellProperty.cardRadius, offset: .init(width: 0, height: 0))
     }
 
     open func configure(
-        position: JPKCardBaseOnCell.Position,
+        position: JPKConfigure.tableViewCardCellProperty.Position,
         model: Any? = nil,
-        left: CGFloat = JPKCardBaseOnCellProperty.marginCardLeft,
-        right: CGFloat = JPKCardBaseOnCellProperty.marginCardRight,
-        top: CGFloat = JPKCardBaseOnCellProperty.marginCardTop,
-        bottom: CGFloat = JPKCardBaseOnCellProperty.marginCardBottom,
+        left: CGFloat = JPKConfigure.cardCellProperty.marginCardLeft,
+        right: CGFloat = JPKConfigure.cardCellProperty.marginCardRight,
+        top: CGFloat = JPKConfigure.cardCellProperty.marginCardTop,
+        bottom: CGFloat = JPKConfigure.cardCellProperty.marginCardBottom,
         delegateOfBase: JPKCardBaseOnDelegate? = nil,
         completion: (() -> Void)? = nil)
     {
@@ -196,6 +196,7 @@ open class JPKCardBaseOnCell: UITableViewCell {
         
     }
     
+    /// set data in cell (config > update cell)
     open func updateCell(_ model: Any?, completion: (() -> Void)?) {
         
     }

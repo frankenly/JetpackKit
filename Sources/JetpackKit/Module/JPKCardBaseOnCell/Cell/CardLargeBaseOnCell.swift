@@ -12,35 +12,35 @@ open class CardLargeBaseOnCell: JPKCardBaseOnCell {
     
     override public func setupCardView(
         position: JPKCardBaseOnCell.Position,
-        left: CGFloat = JPKCardBaseOnCellProperty.marginCardLeft,
-        right: CGFloat = JPKCardBaseOnCellProperty.marginCardRight,
-        top: CGFloat = JPKCardBaseOnCellProperty.marginCardTop,
-        bottom: CGFloat = JPKCardBaseOnCellProperty.marginCardBottom) {
+        left: CGFloat = JPKConfigure.cardCellProperty.marginCardLeft,
+        right: CGFloat = JPKConfigure.cardCellProperty.marginCardRight,
+        top: CGFloat = JPKConfigure.cardCellProperty.marginCardTop,
+        bottom: CGFloat = JPKConfigure.cardCellProperty.marginCardBottom) {
             
             super.setupCardView(position: position, left: left, right: right, top: top, bottom: bottom)
             super.borderBottomView.isHidden = true
             
-            super.cardViewSingle.layer.cornerRadius = JPKCardBaseOnCellProperty.cardLargeRadius
-            super.cardViewTop.layer.cornerRadius = JPKCardBaseOnCellProperty.cardLargeRadius
-            super.cardViewCenter.layer.cornerRadius = JPKCardBaseOnCellProperty.cardLargeRadius
-            super.cardViewBottom.layer.cornerRadius = JPKCardBaseOnCellProperty.cardLargeRadius
+            super.cardViewSingle.layer.cornerRadius = JPKConfigure.cardCellProperty.cardLargeRadius
+            super.cardViewTop.layer.cornerRadius = JPKConfigure.cardCellProperty.cardLargeRadius
+            super.cardViewCenter.layer.cornerRadius = JPKConfigure.cardCellProperty.cardLargeRadius
+            super.cardViewBottom.layer.cornerRadius = JPKConfigure.cardCellProperty.cardLargeRadius
             
             //            super.cardViewSingle.shadowCard()
             //            super.cardViewTop.shadowCard()
             //            super.cardViewCenter.shadowCard()
             //            super.cardViewBottom.shadowCard()
             
-            super.cardViewTop.jpk.constrants?.left?.constant = JPKCardBaseOnCellProperty.marginCardLargeLeft
-            super.cardViewTop.jpk.constrants?.right?.constant = JPKCardBaseOnCellProperty.marginCardLargeRight * -1
+            super.cardViewTop.jpk.constrants?.left?.constant = JPKConfigure.cardCellProperty.marginCardLargeLeft
+            super.cardViewTop.jpk.constrants?.right?.constant = JPKConfigure.cardCellProperty.marginCardLargeRight * -1
             
-            super.cardViewSingle.jpk.constrants?.left?.constant = JPKCardBaseOnCellProperty.marginCardLargeLeft
-            super.cardViewSingle.jpk.constrants?.right?.constant = JPKCardBaseOnCellProperty.marginCardLargeRight * -1
+            super.cardViewSingle.jpk.constrants?.left?.constant = JPKConfigure.cardCellProperty.marginCardLargeLeft
+            super.cardViewSingle.jpk.constrants?.right?.constant = JPKConfigure.cardCellProperty.marginCardLargeRight * -1
             
-            super.cardViewCenter.jpk.constrants?.left?.constant = JPKCardBaseOnCellProperty.marginCardLargeLeft
-            super.cardViewCenter.jpk.constrants?.right?.constant = JPKCardBaseOnCellProperty.marginCardLargeRight * -1
+            super.cardViewCenter.jpk.constrants?.left?.constant = JPKConfigure.cardCellProperty.marginCardLargeLeft
+            super.cardViewCenter.jpk.constrants?.right?.constant = JPKConfigure.cardCellProperty.marginCardLargeRight * -1
             
-            super.cardViewBottom.jpk.constrants?.left?.constant = JPKCardBaseOnCellProperty.marginCardLargeLeft
-            super.cardViewBottom.jpk.constrants?.right?.constant = JPKCardBaseOnCellProperty.marginCardLargeRight * -1
+            super.cardViewBottom.jpk.constrants?.left?.constant = JPKConfigure.cardCellProperty.marginCardLargeLeft
+            super.cardViewBottom.jpk.constrants?.right?.constant = JPKConfigure.cardCellProperty.marginCardLargeRight * -1
             
         }
 }

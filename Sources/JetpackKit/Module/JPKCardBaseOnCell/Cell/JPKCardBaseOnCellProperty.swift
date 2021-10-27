@@ -10,26 +10,37 @@ import UIKit
 
 public class JPKCardBaseOnCellProperty {
     
-    public static var backgroundColor: UIColor = JPKColor.lightGray
+    /// background cell
+    public var backgroundColor: UIColor = JPKColor.lightGray
     
-    public static var cardColor: UIColor = UIColor.white
+    /// background card
+    public var cardColor: UIColor = UIColor.white
     
-    public static var lineColor: UIColor = UIColor(red: 227/255, green: 230/255, blue: 239/255, alpha: 1)
+    /// line color
+    public var lineColor: UIColor = UIColor(red: 227/255, green: 230/255, blue: 239/255, alpha: 1)
     
-    public static var marginCardTop: CGFloat = 0
+    /// margin top card min, large
+    public var marginCardTop: CGFloat = 0
     
-    public static var marginCardBottom: CGFloat = 0
+    /// margin bottom card mini, large
+    public var marginCardBottom: CGFloat = 0
     
-    public static var marginCardLeft: CGFloat = 18
+    /// margin let card mini
+    public var marginCardLeft: CGFloat = 18
     
-    public static var marginCardRight: CGFloat = 18
+    /// margin right card mini
+    public var marginCardRight: CGFloat = 18
     
-    public static var cardRadius: CGFloat = 10
+    /// radius card mini
+    public var cardRadius: CGFloat = 10
     
-    public static var cardLargeRadius: CGFloat = 12
+    /// radius card large
+    public var cardLargeRadius: CGFloat = 12
     
-    public static var marginCardLargeLeft: CGFloat = 12
+    /// maring left card large
+    public var marginCardLargeLeft: CGFloat = 12
 
-    public static var marginCardLargeRight: CGFloat = 12
+    /// margin right card large
+    public var marginCardLargeRight: CGFloat = 12
     
 }
