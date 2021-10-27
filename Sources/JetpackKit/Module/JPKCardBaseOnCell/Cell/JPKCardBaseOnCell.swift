@@ -21,7 +21,7 @@ public class JPKCardBaseOnCell: UITableViewCell {
         case single
     }
     
-    public private var _position: Position! {
+    private var _position: Position! {
         didSet {
             switch _position {
             case .top:
@@ -56,7 +56,7 @@ public class JPKCardBaseOnCell: UITableViewCell {
    
     public let cardViewTop: UIView = {
         let v = UIView()
-        v.backgroundColor = JPKCardBaseOnCellProperty.white
+        v.backgroundColor = JPKCardBaseOnCellProperty.cardColor
         v.layer.cornerRadius = JPKCardBaseOnCellProperty.cardRadius
         v.isHidden = true
         return v
@@ -64,7 +64,7 @@ public class JPKCardBaseOnCell: UITableViewCell {
     
     public let cardViewSingle: UIView = {
         let v = UIView()
-        v.backgroundColor = JPKCardBaseOnCellProperty.white
+        v.backgroundColor = JPKCardBaseOnCellProperty.cardColor
         v.layer.cornerRadius = JPKCardBaseOnCellProperty.cardRadius
         v.isHidden = true
         return v
@@ -72,7 +72,7 @@ public class JPKCardBaseOnCell: UITableViewCell {
     
     public let cardViewBottom: UIView = {
         let v = UIView()
-        v.backgroundColor = JPKCardBaseOnCellProperty.white
+        v.backgroundColor = JPKCardBaseOnCellProperty.cardColor
         v.layer.cornerRadius = JPKCardBaseOnCellProperty.cardRadius
         v.isHidden = true
         return v
@@ -80,7 +80,7 @@ public class JPKCardBaseOnCell: UITableViewCell {
     
     public let cardViewCenter: UIView = {
         let v = UIView()
-        v.backgroundColor = JPKCardBaseOnCellProperty.white
+        v.backgroundColor = JPKCardBaseOnCellProperty.cardColor
         v.layer.cornerRadius = 0
         v.isHidden = true
         return v
@@ -88,7 +88,7 @@ public class JPKCardBaseOnCell: UITableViewCell {
     
     public let borderBottomView: UIView = {
         let v = UIView()
-        v.backgroundColor = JPKCardBaseOnCellProperty.white
+        v.backgroundColor = JPKCardBaseOnCellProperty.cardColor
         return v
     }()
     

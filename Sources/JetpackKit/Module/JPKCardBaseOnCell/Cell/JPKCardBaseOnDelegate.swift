@@ -8,10 +8,10 @@
 import Foundation
 import UIKit
 
-protocol JPKCardBaseOnDelegate: AnyObject {
+public protocol JPKCardBaseOnDelegate: AnyObject {
     func updateCell() -> Void
 }
 
-extension JPKCardBaseOnDelegate {
+public extension JPKCardBaseOnDelegate {
     public func updateCell() -> Void { }
 }
