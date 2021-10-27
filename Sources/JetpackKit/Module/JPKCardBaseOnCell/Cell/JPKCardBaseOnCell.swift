@@ -101,7 +101,7 @@ open class JPKCardBaseOnCell: UITableViewCell {
     }
     
     public func setupCardView(
-        position: JPKConfigure.tableViewCardCellProperty.Position,
+        position: JPKCardBaseOnCell.Position,
         left: CGFloat = JPKConfigure.cardCellProperty.marginCardLeft,
         right: CGFloat = JPKConfigure.cardCellProperty.marginCardRight,
         top: CGFloat = JPKConfigure.cardCellProperty.marginCardTop,
@@ -173,7 +173,7 @@ open class JPKCardBaseOnCell: UITableViewCell {
     }
 
     open func configure(
-        position: JPKConfigure.tableViewCardCellProperty.Position,
+        position: JPKCardBaseOnCell.Position,
         model: Any? = nil,
         left: CGFloat = JPKConfigure.cardCellProperty.marginCardLeft,
         right: CGFloat = JPKConfigure.cardCellProperty.marginCardRight,
