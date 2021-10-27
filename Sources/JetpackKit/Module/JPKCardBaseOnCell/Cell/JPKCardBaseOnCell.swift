@@ -105,7 +105,8 @@ public class JPKCardBaseOnCell: UITableViewCell {
         left: CGFloat = JPKCardBaseOnCellProperty.marginCardLeft,
         right: CGFloat = JPKCardBaseOnCellProperty.marginCardRight,
         top: CGFloat = JPKCardBaseOnCellProperty.marginCardTop,
-        bottom: CGFloat = JPKCardBaseOnCellProperty.marginCardBottom){
+        bottom: CGFloat = JPKCardBaseOnCellProperty.marginCardBottom)
+    {
         
         self._position = position
         
@@ -153,8 +154,15 @@ public class JPKCardBaseOnCell: UITableViewCell {
                 widthConstant: 0,
                 heightConstant: 0)
         
-        contentView.addSubview(borderBottomView)
-        borderBottomView.anchor(nil, left: cardViewTop.leftAnchor, bottom: contentView.bottomAnchor, right: cardViewTop.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 1)
+        borderBottomView.jpk
+            .addSuperview(contentView)
+            .anchor(
+                top: nil,
+                left: cardViewTop.leftAnchor,
+                bottom: contentView.bottomAnchor,
+                right: cardViewTop.rightAnchor,
+                widthConstant: 0,
+                heightConstant: 1)
     }
     
     public func setupShadow() {

@@ -14,7 +14,7 @@ public class JPKCardBaseOnCellProperty {
     
     public static var cardColor: UIColor = UIColor.white
     
-    public static var lineColor: UIColor = UIColor.rgb(red: 227, green: 230, blue: 239)
+    public static var lineColor: UIColor = UIColor(red: 227/255, green: 230/255, blue: 239/255, alpha: 1)
     
     public static var marginCardTop: CGFloat = 0
     

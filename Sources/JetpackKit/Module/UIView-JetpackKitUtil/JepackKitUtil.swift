@@ -62,12 +62,12 @@ public class JepackKitUtil {
     }
     
     public func shadowFlatDesign(color: UIColor = UIColor.black, opacityShadow opacity: Float = 0.4, radius: CGFloat = 0, offset: CGSize = CGSize(width: 5, height: 5)){
-        layer.cornerRadius = radius
-        layer.shadowColor = color.cgColor
-        layer.shadowOffset = offset
-        layer.shadowOpacity = opacity
-        layer.shadowRadius = 5
-        layer.masksToBounds = false
+        superView.layer.cornerRadius = radius
+        superView.layer.shadowColor = color.cgColor
+        superView.layer.shadowOffset = offset
+        superView.layer.shadowOpacity = opacity
+        superView.layer.shadowRadius = 5
+        superView.layer.masksToBounds = false
     }
  
 }
