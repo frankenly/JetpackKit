@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-open class JPKConfigure.tableViewCardCellProperty: UITableViewCell {
+open class JPKCardBaseOnCell: UITableViewCell {
     
     public weak var delegateOfBase: JPKCardBaseOnDelegate?
     
@@ -188,11 +188,11 @@ open class JPKConfigure.tableViewCardCellProperty: UITableViewCell {
             right: right,
             top: top,
             bottom: bottom)
-        setupView()
+        setupCell()
         updateCell(model, completion: completion)
     }
     
-    open func setupView() {
+    open func setupCell() {
         
     }
     
@@ -200,5 +200,6 @@ open class JPKConfigure.tableViewCardCellProperty: UITableViewCell {
     open func updateCell(_ model: Any?, completion: (() -> Void)?) {
         
     }
+    
 }
 
