@@ -165,11 +165,39 @@ open class JPKCardBaseOnCell: UITableViewCell {
                 heightConstant: 1)
     }
     
-    public func setupShadow() {
+    open func setupShadow() {
         cardViewTop.jpk.shadowFlatDesign(opacityShadow: 0.1, radius: JPKCardBaseOnCellProperty.cardRadius, offset: .init(width: 0, height: 0))
         cardViewCenter.jpk.shadowFlatDesign(opacityShadow: 0.1, radius: 0, offset: .init(width: 0, height: 0))
         cardViewBottom.jpk.shadowFlatDesign(opacityShadow: 0.1, radius: JPKCardBaseOnCellProperty.cardRadius, offset: .init(width: 0, height: 0))
         cardViewSingle.jpk.shadowFlatDesign(opacityShadow: 0.1, radius: JPKCardBaseOnCellProperty.cardRadius, offset: .init(width: 0, height: 0))
     }
 
+    open func configure(
+        position: JPKCardBaseOnCell.Position,
+        model: Any = nil,
+        left: CGFloat = JPKCardBaseOnCellProperty.marginCardLeft,
+        right: CGFloat = JPKCardBaseOnCellProperty.marginCardRight,
+        top: CGFloat = JPKCardBaseOnCellProperty.marginCardTop,
+        bottom: CGFloat = JPKCardBaseOnCellProperty.marginCardBottom,
+        delegateOfBase: JPKCardBaseOnDelegate? = nil,
+        completion: (() -> Void)? = nil)
+    {
+        setupCardView(
+            position: position,
+            left: left,
+            right: right,
+            top: top,
+            bottom: bottom)
+        setupView()
+        updateCell(model, completion: completion)
+    }
+    
+    open func setupView() {
+        
+    }
+    
+    open func updateCell(_ model: Any, completion: (() -> Void)?) {
+        
+    }
 }
+
