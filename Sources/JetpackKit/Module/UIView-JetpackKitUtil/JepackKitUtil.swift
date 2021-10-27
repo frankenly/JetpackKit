@@ -60,6 +60,15 @@ public class JepackKitUtil {
         _superview.addSubview(self.superView)
         return self
     }
+    
+    public func shadowFlatDesign(color: UIColor = UIColor.black, opacityShadow opacity: Float = 0.4, radius: CGFloat = 0, offset: CGSize = CGSize(width: 5, height: 5)){
+        layer.cornerRadius = radius
+        layer.shadowColor = color.cgColor
+        layer.shadowOffset = offset
+        layer.shadowOpacity = opacity
+        layer.shadowRadius = 5
+        layer.masksToBounds = false
+    }
  
 }
 
