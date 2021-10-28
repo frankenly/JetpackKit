@@ -37,6 +37,12 @@ How to use ?
     * .SUCCESS is green icon
 
 # Version Log
+* 1.0.9
+    * Tableview card base cell.
+    * JPKCardBaseOnCell
+        * can override setupCell, updateCell
+    * CardLargeBaseOnCell
+        * can override setupCell, updateCell
 * 1.0.8
     * JPK Debug insert first string.
 * 1.0.7
