@@ -37,6 +37,9 @@ How to use ?
     * .SUCCESS is green icon
 
 # Version Log
+* 1.1.0
+    * JPKBaseModel
+        * base model for obserse rx
 * 1.0.9
     * Tableview card base cell.
     * JPKCardBaseOnCell
