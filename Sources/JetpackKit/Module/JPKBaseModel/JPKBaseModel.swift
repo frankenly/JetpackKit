@@ -1,7 +1,7 @@
 
 import Foundation
 
-public enum JPKBaseModelType {
+public enum JPKBaseModelState {
     case REFRESH
     case UPDATE_MODEL
     case LOAD_MORE
@@ -11,9 +11,10 @@ public enum JPKBaseModelType {
     case LOADING
     case LOADED
     case OTHER(flag: String)
+    case NONE
 }
 
 public struct JPKBaseModel<T> {
     public var models: T
-    public var state: BaseListType
+    public var state: JPKBaseModelState
 }
