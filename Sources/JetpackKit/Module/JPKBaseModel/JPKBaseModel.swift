@@ -17,4 +17,8 @@ public enum JPKBaseModelState {
 public struct JPKBaseModel<T> {
     public var models: T
     public var state: JPKBaseModelState
+    public init(models: T, state: JPKBaseModelState) {
+        self.models = models
+        self.state = state
+    }
 }
