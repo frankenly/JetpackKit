@@ -23,6 +23,19 @@ open class JPKBaseRawViewControllerNavigationOptions {
 }
 
 public enum JPKBaseRawViewControllerStyle {
+    
     case DEFAULT
+    
     case DISABLE
+    
+    public var showNavigationL Bool {
+        switch self {
+        case .DEFAULT:
+            return true
+        case .DISABLE:
+            return false
+        default:
+            return true
+        }
+    }
 }
