@@ -28,7 +28,7 @@ public enum JPKBaseRawViewControllerStyle {
     
     case DISABLE
     
-    public var showNavigation Bool {
+    public var showNavigation: Bool {
         switch self {
         case .DEFAULT:
             return true
