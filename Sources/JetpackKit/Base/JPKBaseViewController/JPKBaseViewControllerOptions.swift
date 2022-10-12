@@ -20,7 +20,7 @@ open class JPKBaseRawViewControllerOptions {
         self.defaultData()
     }
     
-    public func defaultData() {
+    open func defaultData() {
         
     }
     

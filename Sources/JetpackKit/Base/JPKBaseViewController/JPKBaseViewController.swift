@@ -38,20 +38,20 @@ open class JPKBaseRawViewController: UIViewController {
         navigationController?.navigationBar.isHidden = (options?.navigation.isActive ?? true)
     }
     
-    public func initialize() {
+    open func initialize() {
         setupNavigation()
         setupView()
     }
     
-    public func setupNavigation() {
+    open func setupNavigation() {
         
     }
     
-    public func setupView() {
+    open func setupView() {
         view.backgroundColor = options?.backgroundColor
     }
     
-    public func updateOption() {
+    open func updateOption() {
         setupNavigation()
         view.backgroundColor = options?.backgroundColor
     }
