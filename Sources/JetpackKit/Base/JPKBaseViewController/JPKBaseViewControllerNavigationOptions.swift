@@ -14,10 +14,15 @@ open class JPKBaseRawViewControllerNavigationOptions {
     public var title: String? = nil
     public var backgroundColor: UIColor = UIColor.white
     public var textColor: UIColor = UIColor.black
-    public var isActive: Bool = true
+    public var style: JPKBaseRawViewControllerStyle = JPKBaseRawViewControllerStyle.DEFAULT
     public var leftItems: [UIBarButtonItem] = []
     public var rightItems: [UIBarButtonItem] = []
     public var isLarge: Bool = false
     public var backColor: UIColor = UIColor.black
     public var radius: CGFloat = 0
+}
+
+public enum JPKBaseRawViewControllerStyle {
+    case DEFAULT
+    case DISABLE
 }
