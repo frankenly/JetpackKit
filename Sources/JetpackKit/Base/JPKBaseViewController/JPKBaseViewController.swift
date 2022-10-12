@@ -30,12 +30,12 @@ open class JPKBaseRawViewController: UIViewController {
     
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(!(options?.navigation.isActive ?? true), animated: true)
+        self.navigationController?.setNavigationBarHidden(!(options?.navigation.style.showNavigation ?? true), animated: true)
     }
     
     open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        navigationController?.navigationBar.isHidden = (options?.navigation.isActive ?? true)
+        navigationController?.navigationBar.isHidden = (options?.navigation.style.showNavigation ?? true)
     }
     
     open func initialize() {
