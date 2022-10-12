@@ -19,4 +19,5 @@ open class JPKBaseRawViewControllerNavigationOptions {
     public var rightItems: [UIBarButtonItem] = []
     public var isLarge: Bool = false
     public var backColor: UIColor = UIColor.black
+    public var radius: CGFloat = 0
 }
